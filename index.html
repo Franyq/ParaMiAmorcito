@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#100d10">
+  <meta name="description" content="Un pequeño rincón hecho con cariño, solo para vos.">
+  <title>Para mi Lunita ♡</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Ir al inicio"><span class="brand-mark">✦</span> UN RINCÓN PARA VOS</a>
+    <button class="music-button" id="musicToggle" type="button" aria-pressed="false">
+      <span id="musicIcon" aria-hidden="true">♫</span><span id="musicLabel">Activar música</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero section" id="inicio">
+      <div class="hero-orbit orbit-one"></div><div class="hero-orbit orbit-two"></div>
+      <p class="eyebrow">HECHO CON AMOR · PARA VOS</p>
+      <div class="gold-line"></div>
+      <h1>Para <span class="gold" id="herName">mi Lunita</span><span class="heart"> ♡</span></h1>
+      <p class="hero-copy">No hace falta una fecha especial para recordarte lo mucho que significás para mí.</p>
+      <a class="primary-link" href="#carta">Hay algo que te quiero decir <span>↓</span></a>
+      <p class="scroll-note">DESLIZÁ DESPACIO</p>
+    </section>
+
+    <section class="section intro" id="carta">
+      <p class="eyebrow">UNAS PALABRAS PARA VOS</p>
+      <h2>Si pudiera decirte algo…</h2>
+      <div class="letter-card">
+        <span class="quote-mark">“</span>
+        <p class="letter-text">Perdon por todas las veces en las que me comporte como un tonto, yo realmente no soy asi y para mi lo sos todo, realmente ese lado mio no me representa.</p>
+        <p class="letter-text">Feliz dia de la madre mi amorcito hermoso.</p>
+        <p class="signature">Con cariño, <span id="yourName">tu Solcito</span> ♡</p>
+      </div>
+    </section>
+
+    <section class="section memories" id="recuerdos">
+      <p class="eyebrow">NUESTROS RECUERDOS:3</p>
+      <h2>Un lugar para nuestros momentos</h2>
+      <div class="photo-grid">
+        <figure class="photo-card photo-tall">
+          <img src="fotos/foto-1.jpg" alt="Espacio para una foto especial de ustedes" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>✧</span><strong>Nuestro momento favorito</strong><small>Agregá fotos/foto-1.jpg</small></div>
+          <figcaption>Ese momento que me gusta recordar</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="fotos/foto-2.jpg" alt="Espacio para otra foto de ustedes" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>♡</span><strong>Una sonrisa tuya</strong><small>Agregá fotos/foto-2.jpg</small></div>
+          <figcaption>Una de esas sonrisas que alegran el día</figcaption>
+        </figure>
+        <figure class="photo-card">
+          <img src="fotos/foto-3.jpg" alt="Espacio para una tercera foto de ustedes" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+          <div class="photo-placeholder"><span>✦</span><strong>Un recuerdo más</strong><small>Agregá fotos/foto-3.jpg</small></div>
+          <figcaption>Y todos los momentos que todavía faltan</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section reasons">
+      <p class="eyebrow">POR SI ALGUNA VEZ TE OLVIDÁS</p>
+      <h2>Unas pequeñas cosas que adoro de vos</h2>
+      <div class="reasons-list">
+        <div class="reason"><span>01</span><p>Tu forma tan tierna de ser.</p></div>
+        <div class="reason"><span>02</span><p>Lo compañera que sos.</p></div>
+        <div class="reason"><span>03</span><p>Lo mucho que me ayudaste y me seguis ayudando.</p></div>
+      </div>
+    </section>
+
+    <section class="section surprise">
+      <div class="surprise-frame">
+        <p class="eyebrow">UNA ÚLTIMA COSITA</p>
+        <h2>Hay un mensaje escondido para vos:3</h2>
+        <p class="section-copy">Cuando quieras, abrilo.</p>
+        <button class="primary-link reveal-button" id="revealButton" type="button" aria-expanded="false">Abrir mi sorpresa <span>✦</span></button>
+        <div class="secret-message" id="secretMessage" hidden>
+          <span class="big-heart">♡</span>
+          <p>No necesitaba una excusa para hacerte esto. Solo quería que, por un momento, sintieras lo especial que sos para mí.</p>
+          <p class="secret-last">Ojalá esta pequeña sorpresa te saque una sonrisa. ✨</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span class="footer-star">✦</span>
+    <p>Hecho especialmente para vos, con muchisimo amor.</p>
+    <small>UN PEQUEÑO DETALLE, PARA MI LUNITA 🌙</small>
+  </footer>
+
+  <audio id="backgroundMusic" loop preload="none">
+    <!-- Colocá un archivo propio o con licencia en audio/musica.mp3 y quitá el comentario de abajo. -->
+    <source src="audio/musica.mp3" type="audio/mpeg">
+  </audio>
+  <script src="script.js"></script>
+</body>
+</html>
